@@ -13,6 +13,7 @@ import NotFound from "../views/error/NotFound";
 Vue.use(Router);
 
 export default new Router({
+  // 去掉路径中的#
   mode: 'history',
   routes: [
     {

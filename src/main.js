@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import App from './App';
 import ElementUI from "element-ui";
-import 'element-ui/lib/theme-chalk/index.css';
+import 'element-ui/lib/theme-chalk/index.css'
+
 import VueRouter from "vue-router";
 
 import router from './router'
@@ -9,7 +10,6 @@ import router from './router'
 import axios from 'axios'
 
 import Vuex from 'vuex'
-Vue.use(Vuex);
 
 import store from './store'
 
@@ -20,6 +20,9 @@ Vue.use(VueRouter);
 
 // 安装 ElementUI
 Vue.use(ElementUI);
+
+// 安装 Vuex
+Vue.use(Vuex);
 
 
 Vue.config.productionTip = false
@@ -61,6 +64,7 @@ new Vue({
   el: '#app',
   // 启用路由
   router,
+
   store,
   // 启用 ElementUI
   render: h => h(App)
